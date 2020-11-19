@@ -12,13 +12,14 @@
 
 var x;
 for ( x = 0; x < 8; x++){
-  document.parentElement  
+
 document.getElementsByClassName("like-btn")[x].addEventListener("click",fx)
         }
- function fx(){
-    
+ function fx(a){
+     a.preventDefault(); 
     this.classList.toggle('liked');
-    
+     
+
 }
  
    
